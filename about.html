@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | ClimateGard</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') no-repeat center center/cover;
+      color: white;
+      line-height: 1.8;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: rgba(0,0,0,0.7);
+      padding: 16px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 { margin: 0; font-size: 2.2em; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 8px;
+      transition: color 0.3s;
+    }
+    nav a:hover, nav a.active { color: #7fff00; }
+    main {
+      padding: 48px;
+      background: rgba(0, 0, 0, 0.5);
+      max-width: 900px;
+      margin: 40px auto;
+      border-radius: 12px;
+      flex-grow: 1;
+    }
+    img { max-width: 100%; height: auto; }
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      text-align: center;
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.6em; }
+      nav { gap: 6px; padding: 12px; }
+      nav a { font-size: 0.95em; }
+      main { padding: 20px; margin: 20px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌿 ClimateGuard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="plants.html">Plants</a>
+      <a href="conditions.html">Conditions</a>
+      <a href="plant-suggestion.html">Plant Suggestion</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h1>About ClimateGuard</h1>
+    <p>ClimateGard was built with a simple goal: to make gardening smarter, greener, and easier for everyone. We use data-driven insights to help users choose plants that match their specific regional climates. From hot deserts to humid jungles, our platform analyzes weather patterns and soil conditions to guide you toward plants that will thrive naturally.</p>
+    <p>Our mission is to inspire eco-friendly gardening by reducing plant wastage, saving water, and helping every garden become a mini climate hero. 🌎</p>
+  </main>
+  <footer>
+    © 2025 ClimateGard | Developed by Kautilya Shukla & Team
+  </footer>
+</body>
+</html>

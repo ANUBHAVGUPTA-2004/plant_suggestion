@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | ClimateGard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center/cover;
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.75);
+      text-align: center;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #7fff00;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 50px auto;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      color: #aaff7f;
+      margin-bottom: 30px;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-bottom: 50px;
+    }
+
+    .member {
+      background: rgba(255,255,255,0.1);
+      border-left: 5px solid #7fff00;
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+    .member:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.15);
+    }
+    .member h3 {
+      color: #7fff00;
+      margin-bottom: 5px;
+    }
+    .member p {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+    .member a {
+      color: #9eff8f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .member a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      margin: 0 auto;
+      gap: 15px;
+    }
+    input, textarea, button {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1em;
+      font-family: 'Poppins', sans-serif;
+    }
+    input, textarea {
+      background: rgba(255,255,255,0.1);
+      color: white;
+      outline: none;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #ddd;
+    }
+    button {
+      background: #7fff00;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #aaff7f;
+    }
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      text-align: center;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📬 Contact ClimateGard</h1>
+    <nav>
+       <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="plants.html">Plants</a>
+      <a href="conditions.html">Conditions</a>
+      <a href="get_plant-details.html">Plants suggestion</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Meet Our Team</h2>
+    <div class="team">
+
+      <div class="member">
+        <h3>Kautilya Shukla</h3>
+        <p>Full Stack Developer & Project Lead — passionate about web design, optimization, and green innovation.</p>
+        <p>📧 <a href="mailto:kautilya.shukla@example.com">kautilya.shukla@example.com</a></p>
+      </div>
+
+      <div class="member">
+        <h3>Kavya Kesarwani</h3>
+        <p>UI/UX Designer — brings life to ClimateGard with clean, creative, and user-friendly interfaces.</p>
+        <p>📧 <a href="mailto:kavya.kesarwani@example.com">kavya.kesarwani@example.com</a></p>
+      </div>
+
+      <div class="member">
+        <h3>Jahnavi Priya</h3>
+        <p>Content Strategist — manages sustainability articles, plant data insights, and educational content.</p>
+        <p>📧 <a href="mailto:jahnavi.priya28@gmail.com">jahnavi.priya28@gmail.com</a></p>
+      </div>
+
+      <div class="member">
+        <h3>Anubhav Gupta</h3>
+        <p>Backend & Data Engineer — responsible for data handling, analysis, and API integration for plant data.</p>
+        <p>📧 <a href="mailto:anubhav.gupta@example.com">anubhav.gupta@example.com</a></p>
+      </div>
+
+    </div>
+
+    <h2>Send Us a Message</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 ClimateGard | Team: Kautilya Shukla, Kavya Kesarwani, Jahnavi Priya, Anubhav Gupta 🌿
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !message) {
+        alert("Please fill in all fields before submitting.");
+        return;
+      }
+
+      alert(`Thank you, ${name}! Your message has been sent successfully 🌱`);
+      document.getElementById("contactForm").reset();
+    });
+  </script>
+</body>
+</html>

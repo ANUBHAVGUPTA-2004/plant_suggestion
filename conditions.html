@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditions | ClimateGard</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e') no-repeat center center/cover;
+      background-attachment: fixed;
+      color: white;
+      line-height: 1.8;
+    }
+    header {
+      background: rgba(0,0,0,0.7);
+      padding: 16px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 { margin: 0; font-size: 2.2em; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 8px;
+      transition: color 0.3s;
+    }
+    nav a:hover, nav a.active { color: #7fff00; }
+    main {
+      padding: 20px 48px 48px 48px;
+      background: rgba(0, 0, 0, 0.6);
+      max-width: 900px;
+      margin: 40px auto;
+      border-radius: 12px;
+    }
+    .page-title {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .content-section {
+      margin-bottom: 40px;
+    }
+    .content-section h2 {
+      font-size: 1.8em;
+      color: #9eff8f;
+      border-bottom: 2px solid #9eff8f;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .content-section ul {
+      list-style-type: '🌿';
+      padding-left: 20px;
+    }
+    .content-section li {
+      margin-bottom: 10px;
+    }
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      text-align: center;
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.6em; }
+      nav { gap: 6px; padding: 12px; }
+      nav a { font-size: 0.95em; }
+      main { padding: 20px; margin: 20px 12px; }
+      .page-title { font-size: 2em; }
+      .content-section h2 { font-size: 1.5em; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌿 ClimateGuard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="plants.html">Plants</a>
+      <a href="conditions.html" class="active">Conditions</a>
+      <a href="plant-suggestion.html">Plant Suggestion</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Grow Smart. Grow Green.</h1>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 40px;">
+      Whether you live in a tropical paradise, a desert, or a cold mountain town, ClimateGard helps you grow plants that thrive in your unique climate — using AI, native species, and eco-friendly practices.
+    </p>
+
+    <section class="content-section">
+      <h2>🌎 Understanding Climate Zones</h2>
+        <p><strong>🌴 Tropical Zones:</strong> Warm, humid, and lush — ideal for banana, hibiscus, and ginger lily. Use raised beds and mulch to manage moisture.</p>
+        <p><strong>🏜️ Desert Zones:</strong> Hot and dry — perfect for aloe vera, agave, and lantana. Use drip irrigation and compost-rich soil to retain water.</p>
+        <p><strong>🌤️ Temperate Zones:</strong> Four seasons — grow tomatoes, tulips, and apples. Rotate crops and compost leaves for healthy soil.</p>
+        <p><strong>🏔️ Alpine Zones:</strong> Cold and short seasons — kale, spinach, and marigolds thrive. Use raised beds and frost-hardy perennials.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>🤖 AI Tools for Smart Gardening</h2>
+      <ul>
+        <li><b>Plant ID Apps:</b> Use image recognition to identify plants and pests instantly.</li>
+        <li><b>Garden Planners:</b> Visualize your layout and get AI suggestions for plant placement.</li>
+        <li><b>Care Schedulers:</b> Receive reminders for watering, fertilizing, and pruning.</li>
+        <li><b>Soil & Weather Sensors:</b> Monitor moisture, temperature, and sunlight in real time.</li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>♻️ Eco-Friendly Gardening Practices</h2>
+      <ul>
+        <li>Use compost instead of chemical fertilizers.</li>
+        <li>Collect rainwater and use drip irrigation to conserve water.</li>
+        <li>Grow native plants to support local biodiversity.</li>
+        <li>Practice zero-waste gardening: reuse containers, mulch leaves, and avoid plastic.</li>
+      </ul>
+    </section>
+    
+    <section class="content-section">
+      <h2>🌿 Native Plants by Zone</h2>
+      <ul>
+        <li><b>Tropical:</b> Tabernaemontana, Ixora, Areca palm</li>
+        <li><b>Desert:</b> Euphorbia, Acacia, Prosopis cineraria</li>
+        <li><b>Temperate:</b> Rhododendron, Himalayan birch, Oak</li>
+        <li><b>Alpine:</b> Juniperus, Artemisia, Himalayan blue poppy</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 ClimateGard | Developed by Kautilya Shukla & Team
+  </footer>
+
+</body>
+</html>

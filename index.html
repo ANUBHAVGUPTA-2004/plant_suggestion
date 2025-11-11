@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClimateGard | Home</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 { margin: 0; font-size: 2.2em; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+      padding: 6px 8px;
+    }
+    nav a:hover, nav a.active { color: #7fff00; }
+    .hero { padding: 100px 20px; background: rgba(0, 0, 0, 0.5); }
+    .hero h2 { font-size: 2.5em; }
+    .hero p { font-size: 1.2em; max-width: 800px; margin: 20px auto; }
+    img { max-width: 100%; height: auto; }
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.6em; }
+      .hero { padding: 60px 16px; }
+      .hero h2 { font-size: 1.8em; }
+      .hero p { font-size: 1em; padding: 0 4px; }
+      nav { gap: 6px; }
+      nav a { font-size: 0.9em; }
+      footer { position: static; }
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <header>
+    <h1>🌿 ClimateGuard</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="plants.html">Plants</a>
+      <a href="conditions.html">Conditions</a>
+      <a href="plant-suggestion.html">Plant Suggestion</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Welcome to ClimateGuard</h2>
+    <p>ClimateGard is your intelligent companion for sustainable gardening. We help you select the perfect plants for your region’s unique climate. Whether you live in a tropical paradise, a desert, or a cold mountain town, we make sure your garden thrives year-round.</p>
+    <p>🌱 Discover climate-smart planting, AI recommendations, and eco-friendly guidance to create your green oasis!</p>
+  </div>
+
+  <footer>
+    © 2025 ClimateGard 
+  </footer>
+
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works | ClimateGard</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') no-repeat center center/cover;
+      color: #fff;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: rgba(0,0,0,0.75);
+      text-align: center;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 { margin: 0; font-size: 2.2em; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+      padding: 6px 8px;
+    }
+    nav a:hover, nav a.active { color: #7fff00; }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: rgba(0,0,0,0.5);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      animation: fadeIn 1.2s ease-in;
+      flex-grow: 1;
+    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .page-title { text-align: center; margin-bottom: 25px; color: #9eff8f; font-size: 2.2em; }
+    .steps { display: flex; flex-direction: column; gap: 25px; }
+    .step { background: rgba(255,255,255,0.1); border-left: 5px solid #9eff8f; padding: 20px; border-radius: 10px; transition: transform 0.3s, background 0.3s; }
+    .step:hover { transform: translateY(-5px); background: rgba(255,255,255,0.15); }
+    .step h3 { color: #7fff00; font-size: 1.4em; margin-bottom: 10px; }
+    .step p { font-size: 1.1em; line-height: 1.7; }
+    footer { background: rgba(0,0,0,0.8); padding: 15px; text-align: center; width: 100%; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.6em; }
+      .container { margin: 20px 12px; padding: 20px; }
+      .page-title { font-size: 1.8em; }
+      .step h3 { font-size: 1.2em; }
+      .step p { font-size: 1em; }
+      nav { gap: 6px; }
+      nav a { font-size: 0.9em; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌿 ClimateGuard</h1>
+    <nav>
+     <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="plants.html">Plants</a>
+      <a href="conditions.html">Conditions</a>
+      <a href="plant-suggestion.html">Plant Suggestion</a>
+      <a href="how-it-works.html" class="active">How It Works</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2 class="page-title">⚙️ How ClimateGard Works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>1️⃣ Climate Data Collection</h3>
+        <p>ClimateGard collects real-time data from your region — including temperature, rainfall, humidity, and sunlight exposure. This helps us understand the exact environment your plants will grow in.</p>
+      </div>
+
+      <div class="step">
+        <h3>2️⃣ Soil & Region Analysis</h3>
+        <p>We analyze your soil type and local climate zone to determine the most compatible plants. The system automatically adjusts its recommendations based on region, from coastal areas to dry plains.</p>
+      </div>
+
+      <div class="step">
+        <h3>3️⃣ Plant Recommendation Engine</h3>
+        <p>Our AI compares your region’s data with a database of over 200 plants to find those that naturally thrive in similar conditions. You’ll get a curated list of plants perfect for your area.</p>
+      </div>
+
+      <div class="step">
+        <h3>4️⃣ Growth Guidance & Care Tips</h3>
+        <p>Each recommended plant includes detailed information about watering schedules, sunlight requirements, and maintenance. You’ll also get alerts for seasonal care tips and soil improvements.</p>
+      </div>
+
+      <div class="step">
+        <h3>5️⃣ Eco Impact Tracker</h3>
+        <p>ClimateGard tracks your garden’s environmental contribution — such as oxygen production, carbon absorption, and biodiversity support — helping you see your positive impact on nature.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 ClimateGard | Developed by Kautilya Shukla & Team
+  </footer>
+</body>
+</html>
